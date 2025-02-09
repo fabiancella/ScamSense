@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+    <h2 class="mb-3">📬 Contact Us</h2>
+    <p class="text-muted">Have questions? Fill out the form below and we'll get back to you.</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom w-100">Send Message</button>
+    </form>
+{% endblock %}
+
+

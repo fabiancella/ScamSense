@@ -1,0 +1,180 @@
+/* ===== Light Mode (Default) ===== */
+body.light-mode {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #000;
+}
+
+/* ===== Dark Mode ===== */
+body.dark-mode {
+    background-color: #121212; /* True dark background */
+    color: #fff;
+}
+
+/* ===== Navbar Styles ===== */
+.navbar {
+    transition: background 0.3s ease-in-out;
+}
+
+/* Light Mode Navbar */
+.navbar-light {
+    background-color: #ffffff !important;
+}
+
+/* Dark Mode Navbar */
+body.dark-mode .navbar {
+    background: #222 !important;
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link {
+    color: rgb(231, 27, 27) !important;
+}
+
+body.dark-mode .nav-link:hover {
+    color: #ff9800 !important;
+}
+
+/* ===== Container Styling ===== */
+.container {
+    max-width: 700px;
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Fix the dark mode container */
+body.dark-mode .container {
+    background: #1e1e1e; /* Matches dark mode */
+    border: 1px solid #333; /* Subtle contrast */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Form Styles ===== */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode Form */
+body.dark-mode textarea {
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+}
+
+/* ===== Buttons ===== */
+.btn-custom {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Button */
+body.dark-mode .btn-custom {
+    background-color: #ff9800;
+    color: white;
+}
+
+body.dark-mode .btn-custom:hover {
+    background-color: #e68900;
+}
+
+/* ===== Dark Mode Toggle Button ===== */
+#dark-mode-toggle {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Dark Mode Toggle in Dark Mode */
+body.dark-mode #dark-mode-toggle {
+    background: #444;
+    color: #fff;
+}
+
+/* Light Mode Toggle in Light Mode */
+body.light-mode #dark-mode-toggle {
+    background: #ddd;
+    color: #000;
+}
+
+/* ===== Improve Alerts (Results Section) ===== */
+.alert {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Dark Mode Alert */
+body.dark-mode .alert {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.logo-img {
+    height: 100px; /* Adjust height without affecting width */
+    width: 200;  /* Keeps aspect ratio */
+    object-fit: contain; /* Prevents distortion */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;  
+    padding: 10px 20px;  
+    border-radius: 8px;  
+    transition: all 0.3s ease-in-out;  
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #007bff;  
+    color: white; 
+}
+
+.dark-mode .navbar-nav .nav-link {
+    color: white !important; 
+}
+
+
+.dark-mode .navbar-nav .nav-link:hover {
+    background-color: #333;
+}
+
+::placeholder {
+    color: #888 !important; 
+    opacity: 1; 
+}
+
+::placeholder {
+    color: #888 !important; 
+    opacity: 1; 
+}
+
+.dark-mode ::placeholder {
+    color: #ccc !important; 
+}
+
+.text-muted{
+    color: #888;
+}
+
+.dark-mode .text-muted {
+    color: #bbb !important;
+}
+/* 
+.logo-img me-2{
+    background-color: #000;
+} */
