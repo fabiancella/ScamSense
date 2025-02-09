@@ -46,5 +46,26 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'js/darkmode.js' %}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let messageInput = document.getElementById("messageInput");
+            let submitBtn = document.getElementById("submitBtn");
+            let messageForm = document.getElementById("messageForm");
+
+            if (messageInput && submitBtn && messageForm) {
+                console.log("JavaScript detected message input!");
+
+                messageInput.addEventListener("keypress", function (event) {
+                    console.log("Key pressed: ", event.key);
+                    if (event.key === "Enter" && !event.shiftKey) {
+                        event.preventDefault();
+                        console.log("Submitting form...");
+                        messageForm.submit();
+                    }
+                });
+            }});
+    </script>
+
+    {% block extra_js %}{% endblock %}
 </body>
 </html>
